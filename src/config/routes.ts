@@ -1,6 +1,7 @@
+import NotFound from "modules/exception/404";
+import Dashboard from "layouts/dashboard"
 import { lazy } from "react";
 const Login = lazy(() => import("../modules/login"));
-const Dashboard=lazy(()=>import('../layouts/dashboard'))
 const About = lazy(() => import("../modules/simple/About"));
 const Home = lazy(() => import("../modules/simple/Home"));
 const routes = [
@@ -10,6 +11,7 @@ const routes = [
   },
   {
     path:'/dashboard',
+    exact:true,
     component:Dashboard,
     meta: {
       needLogin: true,
@@ -36,6 +38,17 @@ const routes = [
     component: Login,
     meta: { needLogin: false },
   },
+  {
+    path:'/notfound',
+    component: NotFound,
+  },
+  {
+    path:'*',
+    exact:true,
+    component: NotFound,
+  }
+  
+ 
 ];
 
 export default routes;

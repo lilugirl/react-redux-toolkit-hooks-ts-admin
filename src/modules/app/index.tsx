@@ -1,11 +1,12 @@
 import React,{Suspense} from 'react';
 import './index.css';
-import RouterView from '../../router';
-import routes from '../../router/config';
+import RouterView from 'core/router';
+import routes from 'config/routes';
 import {useSelector} from 'react-redux';
 import {selectTheme} from './store/appSlice';
 
-function App() {
+function App(props:any) {
+  console.log('app props',props);
   const appTheme=useSelector(selectTheme);
   
   if(appTheme==='dark'){
