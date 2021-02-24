@@ -29,6 +29,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
+    "server": "node src/mock/index",
     "json-server": "json-server __json_server_mock__/db.json --watch --port 5000"
   },
   "eslintConfig": {
@@ -45,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "express": "^4.17.1"
   }
 }

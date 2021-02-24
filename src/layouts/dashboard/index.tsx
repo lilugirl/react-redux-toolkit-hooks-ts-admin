@@ -1,13 +1,14 @@
 import Header  from './header';
 import Footer from './footer';
-import RouterView from '../../router';
+import RouterView from 'core/router';
 
 import React from 'react';
-const Layout=({routes}:any)=>{
+const Layout=(props:any)=>{
+    console.log('dashboard props',props)
     return (
         <div>
             <Header />
-              <RouterView routes={routes}></RouterView>
+              <RouterView routes={props.routes}></RouterView>
            <Footer />
         </div>
     )
