@@ -1,21 +1,16 @@
 import React from 'react';
 import {Button} from 'antd';
 import {useDispatch,useSelector} from 'react-redux';
-import {SET_THEME,selectTheme} from '../store/appSlice';
+import {SET_THEME,selectTheme} from '../modules/app/store/appSlice';
 const Theme=()=>{
     const dispatch=useDispatch();
-    const appTheme=useSelector(selectTheme);
+    const theme=useSelector(selectTheme);
   
-    if(appTheme==='dark'){
-        require('antd/dist/antd.dark.less')
-      }else{
-        require('antd/dist/antd.less');
-      }
     return (<>
-    主题 ： {appTheme}
+    主题 ： {theme}
       <Button type="primary" onClick={
         ()=>{
-           if(appTheme==='dark'){
+           if(theme==='dark'){
             
              dispatch(SET_THEME('light'))
            }else{
