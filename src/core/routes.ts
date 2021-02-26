@@ -1,5 +1,6 @@
 import NotFound from "modules/exception/404";
-import Dashboard from "layouts/dashboard"
+import Dashboard from "layouts/dashboard";
+// import Blank from 'layouts/blank';
 import { lazy } from "react";
 const Login = lazy(() => import("../modules/login"));
 const About = lazy(() => import("../modules/simple/About"));
