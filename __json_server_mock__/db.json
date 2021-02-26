@@ -1,41 +1,19 @@
 {
-    "users": [
-      {
-        "id":1,
-        "name":"刘晓静"
-      },{
-        "id":2,
-        "name":"张文山"
-      },{
-        "id":3,
-        "name":"徐姗姗"
-      },{
-        "id":4,
-        "name":"马丽丽"
-      }
-    ],
-    "projects":[
-      {
-        "id":1,
-        "name":"骑手管理",
-        "personId":1,
-        "organization":"外卖组",
-        "created":1604989757139
-      },
-      {
-        "id":2,
-        "name":"团购APP",
-        "personId":2,
-        "organization":"团购组",
-        "created":1604989757139
-      }
-      ,
-      {
-        "id":3,
-        "name":"物料管理系统",
-        "personId":2,
-        "organization":"物料组",
-        "created":1604989757139
-      }
-    ]
-  } 
+  "users": [
+    {
+      "id": 1,
+      "name": "刘晓静",
+      "username":"liu",
+      "password":"abc",
+      "token":"liudfafjifjaidfjaidf"
+    },
+    {
+      "id": 2,
+      "name": "张文山",
+      "username":"zhang",
+      "password":"abc",
+      "token":"zhangdfafjifjaidfjaidf"
+    }
+  ]
+ 
+}
