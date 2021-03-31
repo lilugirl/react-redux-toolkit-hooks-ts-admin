@@ -11,9 +11,8 @@ const routes = [
     to: "/dashboard",
   },
   {
-    path:'/dashboard',
-    exact:true,
-    component:Dashboard,
+    path: "/dashboard",
+    component: Dashboard,
     meta: {
       needLogin: true,
     },
@@ -33,23 +32,14 @@ const routes = [
       needLogin: false,
     },
   },
-  
   {
     path: "/login",
     component: Login,
     meta: { needLogin: false },
   },
   {
-    path:'/notfound',
     component: NotFound,
   },
-  {
-    path:'*',
-    exact:true,
-    component: NotFound,
-  }
-  
- 
 ];
 
 export default routes;
